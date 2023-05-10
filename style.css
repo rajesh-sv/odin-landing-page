@@ -3,24 +3,25 @@
 body {
   font-family: Roboto;
   margin: 0;
-
 }
 
 .header {
   background-color: #1f2937;
   height: 72px;
+  padding: 0 240px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.header.logo {
+.header-logo {
+  margin: 0;
   color: #f9faf8;
   font-size: 24px;
   font-weight: 900;
 }
 
-.header.links ul {
+.header-links ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,8 +29,51 @@ body {
   gap: 24px;
 }
 
-.header.links a {
+.header-links a {
   text-decoration: none;
   color: #e5e7eb;
   font-size: 18px;
+}
+
+.hero {
+  background-color: #1f2937;
+  padding: 80px 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-text,
+.hero-image {
+  width: 450px;
+}
+
+.hero-main-text {
+  margin: 0;
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-secondary-text {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero-text button {
+  border: none;
+  color: #f9faf8;
+  background-color: #2882f6;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 8px 32px;
+  margin-top: 8px;
+}
+
+.hero-image {
+  background-color: #fff5;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
